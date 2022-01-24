@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina de FABI</title>
+        <link rel="icon" href="avengers.ico">
+        <meta charset="utf-8">
+        <meta name="keywords" content="h1, h2, h3, html">
+        <meta name="description" content="esta es una pagina que explica el html con html">
+        <meta name="author" content="Fabian Ayala">
+        <meta name="copyright" content="Facebook Inc.">
+        <meta name="robots" content="">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Pagina 1</a></li>
+                    <li><a href="pagina 2.html">Pagina 2</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <h1>Usar una sola vez h1</h1>
+            <h2>Usar 2 o 3 veces h2</h2>
+            <h3>Usar 2 o 3 veces h3</h3>
+            <h4>Uso ilimitado de h4</h4>
+            <h5>Uso ilimitado de h5</h5>
+            <h6>Uso ilimitado de h6</h6>
+        </div>
+        <div>
+            <a href="#Contactanos">Contactanos</a>
+        <p>
+            Etiquetas como las h o p completan la linea, segun el tamaño de la "caja" que las contenga<br>la b, i, strike o small se adaptan al contenido
+        </p>
+        <b>negrita</b>
+        <i>italica</i>
+        <strike>tachada</strike>
+        <small>chiquita</small>
+        <h3>etiqueta "a" y atributo "href"</h3>
+        </div>
+        <article>
+            <section>
+                <p>
+                    la etiqueta "a" junto con el atributo "href" sirve para redirigir al usuario hacia otra pagina que puede ser una ruta externa o interna.<br> Si es una ruta extrena entonces al comienzo del valor del atributo debera ir el protocolo "https://" seguido de la pagina a la cual redirigimos.<br> Si la pagina es local, solo basta poner el nombre del archivo y lo reedirigira a el.<br> Si l archivo esta dentro de una carpeta hay que poner "nombre de la carpeta"/"nombre del archivo".<br> Para que el enlace se abra en una nueva péstaña hace falta añadir el atributo "target" seguido del valor "=_BLANK". Vease en el ejemplo 1.
+                </p>
+                <h4>Ejemplo de ruta externa</h4>
+                <a href="https://youtube.com" target="_BLANK">Youtube</a>
+                <h4>Ejemplo de ruta local</h4>
+                <a href="pagina 2.html">Pagina 2</a>
+            </section>
+        </article>
+        <aside>
+            <h3>LISTAS: ul es lista normal y ol es lista numerica (ordenada)</h3>
+            <ul>
+                <li>"li" es un elemnto de la lista</li>
+                <li>"li" va dentro de ul o ol</li>
+                <li>otro elemento</li>
+            </ul>
+            <p>
+                para poner una imagen se utiliza la etiqueta "img" con el atributo "src" seguido del nombre del archivo si es local o el enlace si la imagen es externa.<br> Es importante que al descargar la imagen la guardemos como un archivo "png"<br> <b>y no olvides que DEADPOOL TE AMA!!!</b>
+            </p>
+            <img src="deadpool.png" alt="Deadpool" title="En serio te ama">
+        </aside>
+        <form method="post">
+            <input type="text" value="fabian ayala" required="">
+            <input type="password" required="">
+            <input type="number">
+            <input type="email">
+            <input type="color">
+            <input type="range" min="1" max="10">
+            <input type="date">
+            <input type="time">
+            <input type="button" value="boton">
+            <textarea readonly>HOla, no entiendo un pito lo del method</textarea>
+            <input type="submit">
+        </form>
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Edad</td>
+            </tr>
+            <tr>
+                <td>Fabian</td>
+                <td>Ayala</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Facundo</td>
+                <td>Ayala</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Luz</td>
+                <td>Ayala</td>
+                <td>16</td>
+            </tr>
+        </table>
+        <footer>
+            <h4 id="Contactanos">Contactanos</h4>
+            <a href="https://twitter.com/home?lang=es">Twitter</a>
+        </footer>
+    </body>
+</html>
