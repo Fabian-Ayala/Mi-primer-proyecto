@@ -12,7 +12,26 @@
                 </ul>
             </nav>
         </header>
-        <h1>Has entrado a la pagina 2</h1>
-        <a href="Index.html">Volver</a>
+        <h1>teoria de CSS</h1>
+        <h4>Selectores</h4>
+        <p>Los selectores son usuales en CSS y sirven para seleccionar aetiquetas de html y cambiar o modificar su diseño</p>
+        <ul>
+            <li>Selector UNIVERSAL: Para este tipo de selector se utiliza el "*" y entre llaves la propiedad con el valor. Este selector selecciona todo el contenido de la pagina para su modificacion. </li>
+            <li>selector DE TIPO: Selecciona por elemento, es decir apor el nombre de la etiqueta. Puede seleccionar todos los aa"h2" o todos los "input" y asi sucesivamente. Para eso simaplemente se pone el nombre del elemento y entre llaves la propiedad a modificar y el valor</li>
+            <li>selector por CLASES: Selecciona los elementos que tengan el ATRIBUTO "CLASS", para esto a el/los elemntos se les asigna el atributo "class"a con un nombre random. Para eso se usa un punto (.) y el nombre random de la clase y la propiedad y el valor entre llaves</li>
+            <li>selector por ID: Funciona igual que el de CLASES, en lugar de poner el atributo "class" se pone el atributo "id", la caracteristica que lo separa del de clases es que el id debe ser UNICO, osea debe haber un unico elemento con tal ID, en css no se nota mucho la importancia pero en JS si tendra relevancia. Para esto se usa el "#" y el nombre random del ID seguido de la propiedad y el valor entre llaves</li>
+            <li>selector por ATRIBUTO: Selecciona a partir de atributos inventados por nosotros, es decir con un nombre y valor random. Para esto se usa dicho atributo y avalor random dentro de corchetes seguidos de la propiedad y el valor a modificar dentro de llaves</li>
+            <li>selector DESCENDIENTE: Selecciona los elementos que estan dentro de otro determinados elementos, por ejemplo si selecciono los "p" que estan dentro de un "h2" solo cambiara esos "p" y no los que esten por fuera de un "h2". Para esto se utiliza primero el elemento contenedor y lauego el elemento que queremos modificar seguido de la propiedad y el valor entre llaves</li>
+            <li>selector por PSEUDO CLASES: Por el momento carece de explicacion concreta pero el Hoover sirve para que cada vez que apases el cursor por tal elemento este se modificara. apara esto se pone el elemento dos puntos (:) hover seguidos de la propiedad y el valor entre llaves.</li>
+        </ul>
+        <h4>Logica de la ESPECIFICIDAD</h4>
+        <p>Basicamente entre todos los tipos de selectores hay niveles de jerarquia para ver cual predomina por sobre cual. la jerarquia seria la siguiente:<br>-(1)!important<br>-(2)Estilos en linea<br>-(3)Identificadores(id)<br>-(4)Clases/Pseudo-clases/Atributos<br>-(5)Elementos/Pseudo-elementos<br>El !important sirve para romper con la jerarquia y que un tipo de menor jerarquia predomine sobre uno de mayor jerarquia. Esto se hace poniendo "!important" luego del avalor de la propiedad el selector.</p>
+        <h4>Unidades</h4>
+        <p>FONT-SIZE: Se utiliza esta propiedad para cambiar las medidas de la letra (mm, cm, px).<br> Hay medidas fijas como las anteriormente nombraadas y relativas que sirven para adaptarse a dispositivos mobiles (1em= 16px). Los valores de un em se heredan a partir del valor mas cercanamente establecido, es decir que si antes establecimos 25px en la caja contenedora, 1em seran 25px en la primer caja dentro de esa caja y no 16.</p>
+        <p>Para cambiar el tamaño de la caja se utiliza WIDTH (ancho) y HEIGHT (largo) y la medida de "vm" del 1 al 100% tomando como referencia la medida de la pagina?</p>
+        <h4>Normalize</h4>
+        <p> Los navegadores activan por defecto algunas propiedades en las paginas web como por ejemplo el margen o los espacios. Para volver toddo a los valores normales o nulos se usa el normalize, hay que guardar el normalize.css desde google y insertarlo en un link rel en el html para que desaparezcan los valores por defecto del navegador.<br> Cosas que cambiar en el normalize: en "img" poner un max-width de 100% para que la pantalla se ajuste al 100% en mobiles. y poner a todo (*) un box-sizing: border-box, esto es para que las cajas no cambien nunca el tamaño.</p>
+        <h4></h4>
+        <a href="Index.html">Volver a HTML</a>
     </body>
 </html>
