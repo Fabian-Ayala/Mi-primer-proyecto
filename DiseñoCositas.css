@@ -1,0 +1,30 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+nav {
+    background-color: aquamarine;
+    height: 40px;
+    position: fixed;
+    z-index: 200;
+    width: 1000px;
+    margin-top: 0px;
+    padding-top: 10px;
+    border: 4px solid blue;
+}
+.cont {
+
+    background-color: grey;
+    padding-top: 40px;
+    border: 4px solid blueviolet;
+    width: 500px;
+    height: 500px;
+    overflow: scroll;
+}
+
+.cont {
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+}
